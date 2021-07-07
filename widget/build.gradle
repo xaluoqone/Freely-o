@@ -34,5 +34,8 @@ android {
 }
 
 dependencies {
-    implementation project(":basics")
+    api project(":basics")
+    api 'androidx.core:core-ktx:1.5.0'
+    api 'androidx.appcompat:appcompat:1.3.0'
+    api 'com.google.android.material:material:1.3.0'
 }
