@@ -2,3 +2,4 @@ rootProject.name = "Freely"
 include ':app'
 include ':basics'
 include ':widget'
+include ':core'
