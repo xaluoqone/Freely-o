@@ -1,0 +1,29 @@
+buildscript {
+    ext {
+        min_sdk_version = 21
+        compile_and_target_sdk_version = 30
+        build_tools_version = "30.0.3"
+        java_version = JavaVersion.VERSION_1_8
+        kotlin_version = "1.5.20"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
