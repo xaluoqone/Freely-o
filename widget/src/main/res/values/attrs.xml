@@ -4,5 +4,24 @@
         <attr name="cornerRadius" format="dimension" />
         <attr name="backgroundValue" format="color" />
         <attr name="pressBackgroundValue" format="color" />
+        <attr name="backgroundStroke" format="color" />
+        <attr name="pressBackgroundStroke" format="color" />
+
+
+        <attr name="backgroundStyle" format="enum">
+            <enum name="fill" value="1" />
+            <enum name="stroke" value="2" />
+            <enum name="fill_and_stroke" value="3" />
+        </attr>
+        <attr name="pressBackgroundStyle" format="enum">
+            <enum name="fill" value="1" />
+            <enum name="stroke" value="2" />
+            <enum name="fill_and_stroke" value="3" />
+        </attr>
+
+
+        <attr name="textColorValue" format="color" />
+        <attr name="pressTextColorValue" format="color" />
+        <attr name="backgroundStrokeWidth" format="dimension" />
     </declare-styleable>
 </resources>
